@@ -74,7 +74,35 @@
 				</div>
 			</div>
 			<div class="content tpMenu">
-				Grid mit Bildern -> bei hover über Bilder Popup anzeigen (Bild vergrößert)
+				<div class="tp36 center">
+					<div class="imgBox vt" onmouseover="javascript:ShowPopup('popup_1');" onclick="javascript:ShowPopup('popup_1');">
+						<img src="./Images/webdesign.jpg">
+					</div><div class="imgBox vt" onmouseover="javascript:ShowPopup('popup_2');" onclick="javascript:ShowPopup('popup_2');">
+						<img src="./Images/inndata.jpg">
+					</div><div class="imgBox vt" onmouseover="javascript:ShowPopup('popup_3');" onclick="javascript:ShowPopup('popup_3');">
+						<img src="./Images/waelderhaus.jpg">
+					</div>
+
+
+					<div id="popup_1" class="popupBox" onclick="javascript:HidePopup('popup_1');">
+						<div class="popupBody">
+							<img src="./Images/webdesign.jpg">
+							<div class="closePopup pointer" class="javascript:HidePopup('popup_1');"></div>
+						</div>
+					</div>
+					<div id="popup_2" class="popupBox" onclick="javascript:HidePopup('popup_2');">
+						<div class="popupBody">
+							<img src="./Images/inndata.jpg">
+							<div class="closePopup pointer" class="javascript:HidePopup('popup_2');"></div>
+						</div>
+					</div>
+					<div id="popup_3" class="popupBox" onclick="javascript:HidePopup('popup_3');">
+						<div class="popupBody">
+							<img src="./Images/waelderhaus.jpg">
+							<div class="closePopup pointer" class="javascript:HidePopup('popup_3');"></div>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div id="footer">
 				
@@ -86,10 +114,154 @@
 
 
 		<style type="text/css">
+			.imgBox {
+			    display: inline-block;
+			    max-width: 450px;
+			    width: calc(33.3333% - 3.6rem);
+			    margin: 0px 1.8rem;
+			    box-sizing: border-box;
+			    border: 1px solid #8e8e8e;
+			}
+
+			.popupBox {
+				display: none;
+			    position: fixed;
+			    top: 0px;
+			    left: 0px;
+			    z-index: 2;
+			    height: 100%;
+			    width: 100%;
+			    background-color: rgba(0, 0, 0, .2);
+			}
+
+			.popupBody {
+			    position: fixed;
+			    top: 50%;
+			    left: 50%;
+			    z-index: 3;
+			    width: 100%;
+			    max-width: 890px;
+			    padding: 20px;
+			    box-sizing: border-box;
+			    background-color: #fff;
+			    border: 1px solid #8e8e8e;
+			    transform: translateX(-50%) translateY(-50%);
+			    -o-transform: translateX(-50%) translateY(-50%);
+			    -ms-transform: translateX(-50%) translateY(-50%);
+			    -moz-transform: translateX(-50%) translateY(-50%);
+			    -webkit-transform: translateX(-50%) translateY(-50%);
+			}
+
+			.closePopup {
+			    position: absolute;
+			    right: 30px;
+			    bottom: 30px;
+			    width: 31px;
+			    height: 31px;
+			    background-color: #bdbdbd;
+			    border-radius: 16px;
+			    border: 1px solid #212529;
+			}
+
+			.popupBox.openPopup { display: block; }
+
+
+
+			.imgBox > img {
+			    width: 100%;
+			    max-width: 650px;
+			}
+
+			.popupBody > img {
+				width: 100%;
+				max-width: 850px;
+				border: 1px solid #8e8e8e;
+				box-sizing: border-box;
+			}
+
+
+
+			.closePopup::before, 
+			.closePopup::after {
+			    content: '';
+			    display: block;
+			    width: 3px;
+			    height: 80%;
+			    background-color: #ec3434;
+			    border-radius: 3px;
+			    position: absolute;
+			    top: 3px;
+			    left: 14px;
+			}
+
+			.closePopup::before {
+				transform: rotateZ(45deg);
+				-o-transform: rotateZ(45deg);
+				-ms-transform: rotateZ(45deg);
+				-moz-transform: rotateZ(45deg);
+				-webkit-transform: rotateZ(45deg);
+			}
+
+			.closePopup::after {
+				transform: rotateZ(-45deg);
+				-o-transform: rotateZ(-45deg);
+				-ms-transform: rotateZ(-45deg);
+				-moz-transform: rotateZ(-45deg);
+				-webkit-transform: rotateZ(-45deg);
+			}
+
+
+
 			@media screen and (min-width: 1025px) {
 				/* Dye menu point */
-				ul#menu_eb_1 > li.menuPoint:first-of-type { background-color: #0060ac; }	
+				ul#menu_eb_1 > li.menuPoint:nth-of-type(2) { background-color: #0060ac; }
+			}
+
+
+			@media screen and (max-width: 1024px) {
+				.imgBox {
+					width: calc(50% - 1.8rem);
+					margin-bottom: 3.6rem;
+				}
+
+
+
+				.imgBox:nth-of-type(2n+1) {
+					margin-right: 1.8rem;
+					margin-left: 0px;
+				}
+
+				.imgBox:nth-of-type(2n+2) {
+					margin-right: 0px;
+					margin-left: 1.8rem;
+				}
+			}
+
+
+			@media screen and (max-width: 650px) {
+				.imgBox {
+				    width: 100%;
+				    margin-left: 0px !important;
+				    margin-right: 0px !important;
+				}
 			}
 		</style>
+
+
+
+
+		<script type="text/javascript">
+			function HidePopup(popupID) {
+				document.getElementById(popupID).classList.add('closePopup');
+				document.getElementById(popupID).classList.remove('openPopup');
+			}
+
+
+
+			function ShowPopup(popupID) {
+				document.getElementById(popupID).classList.remove('closePopup');
+				document.getElementById(popupID).classList.add('openPopup');
+			}
+		</script>
 	</body>
 </html>
