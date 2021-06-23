@@ -1,0 +1,56 @@
+=======================
+CMS:
+=======================
+
+
+
+o 	CMS = Content Management System
+o 	Different types:
+	CMS
+	ECM (Enterprise Content Management)
+	WCM (Web Content Management)
+
+o 	CMS:
+	o 	precursor to ECM
+	o 	works best with structured content such as documents & DB records
+o 	ECM:
+	o 	manages structured and unstructured content
+	o 	includes software, strategies and security to effectively manage content
+	o 	focuses on content production
+	o 	stores digital files in nested folders
+o 	WCM:
+	o 	similar to ECM but for web content
+	o 	manages multiple types of content
+	o 	externally oriented
+	o 	stores data in DB
+
+o 	Allowes users to create, edit and publish content in an easy way
+o 	GUI provides tools -> no need to write code from scratch
+o	2 Components:
+	CMA (Content Management Application)
+	o	GUI, that allows to design, create, modify, remove content from website
+	o 	Knowledge in HTML, CSS and JS is often not needed
+
+	CDA (Content Delivery Application)
+	o 	provides back-end service -> code behind that runs the system
+	o 	actual management happens here
+
+o 	Popular features:
+	o 	search engine
+	o 	permission system and security
+	o 	templates
+	o 	file uploads
+
+o 	Benefits of CMS:
+	o 	Easy to use due to GUI
+	o 	Easy to search information
+	o 	Easy to manage content
+	o 	Accessible from anywhere
+	o 	Manage permissions
+	o 	Instant content updates
+	o 	Fast managing
+
+o 	Examples:
+	o 	Joomia
+	o 	WordPress
+	o 	Wix
