@@ -4,53 +4,53 @@ CMS:
 
 
 
-o 	CMS = Content Management System
-o 	Different types:
+x 	CMS = Content Management System
+x 	Different types:
 	CMS
 	ECM (Enterprise Content Management)
 	WCM (Web Content Management)
 
-o 	CMS:
-	o 	precursor to ECM
-	o 	works best with structured content such as documents & DB records
-o 	ECM:
-	o 	manages structured and unstructured content
-	o 	includes software, strategies and security to effectively manage content
-	o 	focuses on content production
-	o 	stores digital files in nested folders
-o 	WCM:
-	o 	similar to ECM but for web content
-	o 	manages multiple types of content
-	o 	externally oriented
-	o 	stores data in DB
+x 	CMS:
+	x 	precursor to ECM
+	x 	works best with structured content such as documents & DB records
+x 	ECM:
+	x 	manages structured and unstructured content
+	x 	includes software, strategies and security to effectively manage content
+	x 	focuses on content production
+	x 	stores digital files in nested folders
+x 	WCM:
+	x 	similar to ECM but for web content
+	x 	manages multiple types of content
+	x 	externally oriented
+	x 	stores data in DB
 
-o 	Allowes users to create, edit and publish content in an easy way
-o 	GUI provides tools -> no need to write code from scratch
-o	2 Components:
+x 	Allowes users to create, edit and publish content in an easy way
+x 	GUI provides tools -> no need to write code from scratch
+x	2 Components:
 	CMA (Content Management Application)
-	o	GUI, that allows to design, create, modify, remove content from website
-	o 	Knowledge in HTML, CSS and JS is often not needed
+	x	GUI, that allows to design, create, modify, remove content from website
+	x 	Knowledge in HTML, CSS and JS is often not needed
 
 	CDA (Content Delivery Application)
-	o 	provides back-end service -> code behind that runs the system
-	o 	actual management happens here
+	x 	provides back-end service -> code behind that runs the system
+	x 	actual management happens here
 
-o 	Popular features:
-	o 	search engine
-	o 	permission system and security
-	o 	templates
-	o 	file uploads
+x 	Popular features:
+	x 	search engine
+	x 	permission system and security
+	x 	templates
+	x 	file uploads
 
-o 	Benefits of CMS:
-	o 	Easy to use due to GUI
-	o 	Easy to search information
-	o 	Easy to manage content
-	o 	Accessible from anywhere
-	o 	Manage permissions
-	o 	Instant content updates
-	o 	Fast managing
+x 	Benefits of CMS:
+	x 	Easy to use due to GUI
+	x 	Easy to search information
+	x 	Easy to manage content
+	x 	Accessible from anywhere
+	x 	Manage permissions
+	x 	Instant content updates
+	x 	Fast managing
 
-o 	Examples:
-	o 	Joomia
-	o 	WordPress
-	o 	Wix
+x 	Examples:
+	x 	Joomia
+	x 	WordPress
+	x 	Wix
