@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Progressive Web Apps</title>
+		<title>Team</title>
 		<link rel="stylesheet" type="text/css" href="./global.css">
 		<meta charset="utf-8">
 	</head>
@@ -75,52 +75,46 @@
 			</div>
 			<div class="content tpMenu">
 				<div class="tp18">
-					<h1 class="darkBlue bottomDarkBlue bm36 bp9">Progressive Web Apps</h1>
-					<div id="imgText" class="col23 vt rp18">
-						<h4 class="bm18">What are PWAs</h4>
-						PWAs are websites, that have the capability to be installed, run offline and use native device APIs like the accelerometer or cameras.
-						<br><br>
-						They use emerging web browser APIs and features along with traditional progressive enhancement strategy to bring a native app-like user experience to cross-platform web applications.
-						<br><br>
-						Progressive Web Apps should be discoverable, installable, linkable, network independent, progressive, re-engageable, responsive, and safe.
-					</div><div id="imgBox" class="col13 vt">
-						<img src="./Images/pwa.png">
+					<h1 class="bm36 bp9 darkBlue bottomDarkBlue">
+						Team
+					</h1>
+					<div class="col23">
+						<div id="teamWrapper">
+							<div class="userBox bp18 bm18">
+								<div class="userImg vt">
+									<img src="./Images/user.jpg">
+								</div><div class="userText vt lp18">
+									<b class="blue">Benjamin Knoll</b><br>
+									Gathered information about CMS<br>
+									Design and creation of website
+								</div>
+							</div>
+							<div class="userBox bp18 bm18">
+								<div class="userImg vt">
+									<img src="./Images/user.jpg">
+								</div><div class="userText vt lp18">
+									<b class="blue">Jonas Mayr</b><br>
+									Gathered information about Progressive Web Apps
+								</div>
+							</div>
+							<div class="userBox bp18 bm18">
+								<div class="userImg vt">
+									<img src="./Images/user.jpg">
+								</div><div class="userText vt lp18">
+									<b class="blue">Markus Koidl</b><br>
+									Gathered information about the core elements
+								</div>
+							</div>
+							<div class="userBox bp18 bm18">
+								<div class="userImg vt">
+									<img src="./Images/user.jpg">
+								</div><div class="userText vt lp18">
+									<b class="blue">Fabio Drobic</b><br>
+									Gathered information about responsive web-design
+								</div>
+							</div>
+						</div>
 					</div>
-				</div>
-			</div>
-			<div class="content tm54 vp36 backGray">
-				<div class="col23">
-					<h4 class="bm18">Requirements</h4>
-					<ul class="list">
-						<li class="bm9">
-							A PWA needs to use the https protocol to ensure security
-						</li>
-						<li class="bm9">
-							It needs a service worker to allow for offline capabilities
-						</li>
-						<li>
-							It requires a <b class="blue">manifest.json</b> file to declare how the app should be called, what icons should be used and what options it has.
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="content vm54">
-				<div class="col23">
-					<h4 class="bm18">Usecases</h4>
-					<ul class="list">
-						<li class="bm9">
-							Building an App once and deploying it on all platforms with a single codebase
-						</li>
-						<li class="bm9">
-							Send push notifications on websites
-						</li>
-						<li class="bm9">
-							Take photos directly on your websites like on <a class="blue bold" href="https://selbsttest.tirol" target="_blank">https://selbsttest.tirol/</a>
-						</li>
-						<li>
-							Allows tools like google docs to be used without an active internet connection
-						</li>
-					</ul>
 				</div>
 			</div>
 			<div id="footer" class="vp18 content backBlue white">
@@ -136,24 +130,43 @@
 
 
 		<style type="text/css">
-			#imgBox img {
+			.userText {
+				width: calc(100% - 200px);
+				box-sizing: border-box;
+			}
+
+			.userBox { border-bottom: 1px solid #0060ac; }
+
+
+
+			.userImg, .userText { display: inline-block; }
+
+			.userImg,
+			.userImg img {
 				width: 100%;
-				max-width: 750px;
+				max-width: 200px;
 			}
 
 
 
-			ul#menu_eb_1 > li.menuPoint:nth-of-type(5) { background-color: #0060ac; }
+			.userBox:last-of-type { border-bottom: 0px; }
 
 
 
-			@media screen and (min-width: 1025px) {
-				#imgText { padding-right: 1.8rem; }
+			@media screen and (min-width: 651px) {
+				.userImg { width: calc(100% - 350px); }
+
+				.userText { min-width: 350px; }
 			}
 
 
-			@media screen and (max-width: 1024px) {
-				#imgText { padding-bottom: 3.6rem; }
+			@media screen and (max-width: 650px) {
+				.userText { 
+					display: block; 
+					width: 100%;
+					padding-left: 0px;
+					padding-top: .9rem;
+				}
 			}
 		</style>
 	</body>

@@ -207,6 +207,10 @@ input[type='radio'] { display: none; }
 .vb { vertical-align: bottom; }
 
 
+.fRight { float: right; }
+.fLeft { float: left; }
+
+
 .center { text-align: center; }
 .right { text-align: right; }
 .justify { text-align: justify; }
@@ -407,6 +411,7 @@ ul.menu_eb_2 > li.menuPoint:last-of-type { margin-bottom: 0px; }
 	ul#menu_eb_1 > li.menuPoint {
 		display: inline-block;
 		vertical-align: top;
+		overflow: hidden;
 	}
 
 	ul#menu_eb_1 > li.menuPoint.subMenu > a { padding-right: 37px; }
@@ -426,7 +431,10 @@ ul.menu_eb_2 > li.menuPoint:last-of-type { margin-bottom: 0px; }
 
 	ul#menu_eb_1 > li.menuPoint.subMenu:hover > ul.menu_eb_2 { opacity: 1; }
 
-	ul#menu_eb_1 > li.menuPoint:hover { background-color: #0060ac; }
+	ul#menu_eb_1 > li.menuPoint:hover { 
+		background-color: #0060ac;
+		overflow: visible;
+	}
 
 
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Progressive Web Apps</title>
+		<title>Responsive web-design</title>
 		<link rel="stylesheet" type="text/css" href="./global.css">
 		<meta charset="utf-8">
 	</head>
@@ -75,52 +75,39 @@
 			</div>
 			<div class="content tpMenu">
 				<div class="tp18">
-					<h1 class="darkBlue bottomDarkBlue bm36 bp9">Progressive Web Apps</h1>
-					<div id="imgText" class="col23 vt rp18">
-						<h4 class="bm18">What are PWAs</h4>
-						PWAs are websites, that have the capability to be installed, run offline and use native device APIs like the accelerometer or cameras.
-						<br><br>
-						They use emerging web browser APIs and features along with traditional progressive enhancement strategy to bring a native app-like user experience to cross-platform web applications.
-						<br><br>
-						Progressive Web Apps should be discoverable, installable, linkable, network independent, progressive, re-engageable, responsive, and safe.
-					</div><div id="imgBox" class="col13 vt">
-						<img src="./Images/pwa.png">
+					<h1 class="bm36 bp9 darkBlue bottomDarkBlue">Responsive web-design</h1>
+					<div class="col23 vt imgText">
+						 Responsive web design, also called RWD design, describes a modern web design approach that allows websites and pages to render (or display) on all devices and screen sizes, by automatically adapting to the screen, whether it’s a desktop, laptop, tablet or smartphone.
+					</div><div class="col13 vt imgBox">
+						<img src="./Images/rwd_example.jpg">
 					</div>
 				</div>
 			</div>
-			<div class="content tm54 vp36 backGray">
-				<div class="col23">
-					<h4 class="bm18">Requirements</h4>
-					<ul class="list">
-						<li class="bm9">
-							A PWA needs to use the https protocol to ensure security
-						</li>
-						<li class="bm9">
-							It needs a service worker to allow for offline capabilities
-						</li>
-						<li>
-							It requires a <b class="blue">manifest.json</b> file to declare how the app should be called, what icons should be used and what options it has.
-						</li>
-					</ul>
+			<div id="rwdProcess" class="content flex vp36 backGray tm54">
+				<div class="col23 vt imgText">
+					<h4 class="bm18">How does it work?</h4>
+					Responsive web design works through CSS, using various settings to serve different style properties depending on the screen size, orientation, resolution, color capability and other properties of the user’s device.
+				</div><div class="col13 vt imgBox">
+					<img src="./Images/rwd_content.jpg">
 				</div>
 			</div>
 			<div class="content vm54">
 				<div class="col23">
-					<h4 class="bm18">Usecases</h4>
-					<ul class="list">
-						<li class="bm9">
-							Building an App once and deploying it on all platforms with a single codebase
-						</li>
-						<li class="bm9">
-							Send push notifications on websites
-						</li>
-						<li class="bm9">
-							Take photos directly on your websites like on <a class="blue bold" href="https://selbsttest.tirol" target="_blank">https://selbsttest.tirol/</a>
-						</li>
-						<li>
-							Allows tools like google docs to be used without an active internet connection
-						</li>
-					</ul>
+					<h4 class="bm18">Benefits of a responsive website</h4>
+					<div class="blue bold bm9">
+						One site for every device
+					</div>
+					Whether viewed on a 27-inch iMac with a wireless connection or from the screen of your Android phone, the website will be configured for the user’s optimal viewing pleasure.
+					<br><br>
+					<div class="blue bold bm9">
+						Optimal design for the device
+					</div>
+					With the responsive web design approach, all images, fonts, and other HTML elements will be scaled appropriately, maximizing whatever screen size the user has.
+					<br><br>
+					<div class="blue bold bm9">
+						No need for redirects
+					</div>
+					Other options towards designing for multiple devices require the use of redirects to send the user to the appropriate version of a web page.
 				</div>
 			</div>
 			<div id="footer" class="vp18 content backBlue white">
@@ -136,24 +123,42 @@
 
 
 		<style type="text/css">
-			#imgBox img {
+			.imgBox img {
 				width: 100%;
-				max-width: 750px;
+				max-width: 600px;
 			}
 
 
 
-			ul#menu_eb_1 > li.menuPoint:nth-of-type(5) { background-color: #0060ac; }
+			ul#menu_eb_1 > li.menuPoint:nth-of-type(4) { background-color: #0060ac; }
 
 
 
 			@media screen and (min-width: 1025px) {
-				#imgText { padding-right: 1.8rem; }
+				.imgText { padding-right: 1.8rem; }
+			}
+
+
+			@media screen and (min-width: 769px) {
+				#rwdProcess { flex-direction: row-reverse; }
+
+
+
+				#rwdProcess > div.col23 { 
+					text-align: right;
+					padding-left: 1.8rem; 
+					padding-right: 0px;
+				}
 			}
 
 
 			@media screen and (max-width: 1024px) {
-				#imgText { padding-bottom: 3.6rem; }
+				.imgText { padding-bottom: 3.6rem; }
+			}
+
+
+			@media screen and (max-width: 768px) {
+				#rwdProcess { flex-direction: column; }
 			}
 		</style>
 	</body>
