@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Webdesign</title>
+		<link rel="stylesheet" type="text/css" href="./global.css">
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<div id="main">
+			<div id="header">
+				<div id="menu" class="backDarkBlue white hp36">
+					<input id="chk_toggleMenu" type="checkbox" name="chk_toggleMenu">
+					<label id="lbl_toggleMenu" class="show1024" for="chk_toggleMenu">
+						<div></div>
+					</label>
+					<label id="grayLayer" for="chk_toggleMenu"></label>
+
+
+					<input id="rad_hideSubMenu" type="radio" name="rad_toggleSubMenu">
+
+					<ul id="menu_eb_1" class="center">
+						<li id="menuHeader" class="menuPoint">
+							<div>
+								Menu
+							</div>
+						</li>
+						<li class="menuPoint">
+							<a href="./webdesign.html">
+								Webdesign
+							</a>
+						</li><li class="menuPoint subMenu">
+							<a href="./html.html">
+								Core elements
+							</a><label id="lbl_showSubMenu" class="showInline1024 pointer" for="rad_showSubMenu_1"></label>
+
+
+							<input id="rad_showSubMenu_1" type="radio" name="rad_toggleSubMenu">
+
+							<ul class="menu_eb_2 black">
+								<label id="lbl_hideSubMenu" class="showInline1024 pointer" for="rad_hideSubMenu"></label>
+
+								<li id="menuHeader" class="menuPoint">
+									<div>
+										Main parts
+									</div>
+								</li><li class="menuPoint">
+									<a href="./html.html" class="underline">
+										HTML
+									</a>
+								</li><li class="menuPoint">
+									<a href="./css.html" class="underline">
+										CSS
+									</a>
+								</li><li class="menuPoint">
+									<a href="./js.html" class="underline">
+										JS
+									</a>
+								</li>
+							</ul>
+						</li><li class="menuPoint">
+							<a href="./responsive.html">
+								Responsive design
+							</a>
+						</li><li class="menuPoint">
+							<a href="./pwa.html">
+								Progressive web apps
+							</a>
+						</li><li class="menuPoint">
+							<a href="./cms.html">
+								CMS
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="content tpMenu">
+				<div class="tp18">
+					<h1 class="darkBlue bottomDarkBlue bm36 bp9">Progressive Web Apps</h1>
+					<div id="imgText" class="col23 vt rp18">
+						<h4 class="bm18">What are PWAs</h4>
+						PWAs are websites, that have the capability to be installed, run offline and use native device APIs like the accelerometer or cameras.
+						<br><br>
+						They use emerging web browser APIs and features along with traditional progressive enhancement strategy to bring a native app-like user experience to cross-platform web applications.
+						<br><br>
+						Progressive Web Apps should be discoverable, installable, linkable, network independent, progressive, re-engageable, responsive, and safe.
+					</div><div id="imgBox" class="col13 vt">
+						<img src="./Images/pwa.png">
+					</div>
+				</div>
+			</div>
+			<div class="content tm54 vp36 backGray">
+				<div class="col23">
+					<h4 class="bm18">Requirements</h4>
+					<ul class="list">
+						<li class="bm9">
+							A PWA needs to use the https protocol to ensure security
+						</li>
+						<li class="bm9">
+							It needs a service worker to allow for offline capabilities
+						</li>
+						<li>
+							It requires a <b class="blue">manifest.json</b> file to declare how the app should be called, what icons should be used and what options it has.
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="content vm54">
+				<div class="col23">
+					<h4 class="bm18">Usecases</h4>
+					<ul class="list">
+						<li class="bm9">
+							Building an App once and deploying it on all platforms with a single codebase
+						</li>
+						<li class="bm9">
+							Send push notifications on websites
+						</li>
+						<li class="bm9">
+							Take photos directly on your websites like on <a class="blue bold" href="https://selbsttest.tirol" target="_blank">https://selbsttest.tirol/</a>
+						</li>
+						<li>
+							Allows tools like google docs to be used without an active internet connection
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="footer" class="vp18 content backBlue white">
+				<div class="small dib vt col34">
+					&copy; no one (we don't have copyright on this content, feel free to steal it)
+				</div><div class="dib vt col14 lp18">
+					<a class="bold underline" href="./team.html">Team</a>
+				</div>
+			</div>
+		</div>
+
+
+
+
+		<style type="text/css">
+			#imgBox img {
+				width: 100%;
+				max-width: 750px;
+			}
+
+
+
+			ul#menu_eb_1 > li.menuPoint:nth-of-type(5) { background-color: #0060ac; }
+
+
+
+			@media screen and (min-width: 1025px) {
+				#imgText { padding-right: 1.8rem; }
+			}
+
+
+			@media screen and (max-width: 1024px) {
+				#imgText { padding-bottom: 3.6rem; }
+			}
+		</style>
+	</body>
+</html>
