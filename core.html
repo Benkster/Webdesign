@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Progressive Web Apps</title>
+		<title>Core elements</title>
 		<link rel="stylesheet" type="text/css" href="./global.css">
 		<meta charset="utf-8">
 	</head>
@@ -73,54 +73,52 @@
 					</ul>
 				</div>
 			</div>
-			<div class="content tpMenu">
+			<div id="html" class="content tpMenu">
 				<div class="tp18">
-					<h1 class="darkBlue bottomDarkBlue bm36 bp9">Progressive Web Apps</h1>
-					<div id="imgText" class="col23 vt rp18">
-						<h4 class="bm18">What are PWAs</h4>
-						PWAs are websites, that have the capability to be installed, run offline and use native device APIs like the accelerometer or cameras.
+					<h1 class="bm36 bp9 darkBlue bottomDarkBlue">
+						Core elements
+					</h1>
+					<div class="col23 vt imgText">
+						<h4 class="bm18">HTML</h4>
+						HTML stands for <b class="blue">H</b>yper <b class="blue">T</b>ext <b class="blue">M</b>arkup <b class="blue">L</b>anguage and is the standard markup language for creating web pages.
 						<br><br>
-						They use emerging web browser APIs and features along with traditional progressive enhancement strategy to bring a native app-like user experience to cross-platform web applications.
-						<br><br>
-						Progressive Web Apps should be discoverable, installable, linkable, network independent, progressive, re-engageable, responsive, and safe.
-					</div><div id="imgBox" class="col13 vt">
-						<img src="./Images/pwa.png">
+						It describes the structure of a web page and consists of a series of elements. Those elements tell the browser which content to display and labels pieces of the content such as a heading, a paragraph or a link.
+					</div><div class="col13 vt imgBox">
+						<img src="./Images/html_example.jpg">
 					</div>
 				</div>
 			</div>
-			<div class="content tm54 vp36 backGray">
-				<div class="col23">
-					<h4 class="bm18">Requirements</h4>
-					<ul class="list">
-						<li class="bm9">
-							A PWA needs to use the https protocol to ensure security
-						</li>
-						<li class="bm9">
-							It needs a service worker to allow for offline capabilities
-						</li>
-						<li>
-							It requires a <b class="blue">manifest.json</b> file to declare how the app should be called, what icons should be used and what options it has.
-						</li>
-					</ul>
+			<div id="css" class="content coreRight tm54 vp36 backGray flex">
+				<div class="col23 vt imgText">
+					<h4 class="bm18">CSS</h4>
+					CSS is short for <b class="blue">C</b>ascading <b class="blue">S</b>tyle <b class="blue">S</b>heets and it defines, how elements are beeing displayed on the screen, on paper or on other media types.
+					<br><br>
+					The color, font and size of a text, spacing between elements, the positioning of elements, background settings - like images or colors - and much more are specified via CSS.<br>
+					The CSS can be specified in an external style-sheet, an internal style-sheet or an inline-style.
+				</div><div class="col13 vt imgBox">
+					<img src="./Images/css_example.jpg">
 				</div>
 			</div>
-			<div class="content vm54">
-				<div class="col23">
-					<h4 class="bm18">Usecases</h4>
-					<ul class="list">
+			<div id="js" class="content vm54">
+				<div class="col23 vt imgText">
+					<h4 class="bm18">JS</h4>
+					JS stands for <b class="blue">J</b>ava <b class="blue">S</b>cript and it makes HTML pages more dynamic and interactive.<br>
+					It can be specified via external js-file or internal js-script.
+					<br><br>
+					Common uses for JS are:<br>
+					<ul class="list tm9">
 						<li class="bm9">
-							Building an App once and deploying it on all platforms with a single codebase
+							element manipulation
 						</li>
 						<li class="bm9">
-							Send push notifications on websites
-						</li>
-						<li class="bm9">
-							Take photos directly on your websites like on <a class="blue bold" href="https://selbsttest.tirol" target="_blank">https://selbsttest.tirol/</a>
+							form validation
 						</li>
 						<li>
-							Allows tools like google docs to be used without an active internet connection
+							dynamic content changes
 						</li>
 					</ul>
+				</div><div class="col13 vt imgBox">
+					<img src="./Images/js_example.jpg">
 				</div>
 			</div>
 			<div id="footer" class="vp18 content backBlue white">
@@ -135,25 +133,38 @@
 
 
 
+
 		<style type="text/css">
-			#imgBox img {
+			.imgBox img {
 				width: 100%;
 				max-width: 750px;
 			}
 
 
 
-			ul#menu_eb_1 > li.menuPoint:nth-of-type(5) { background-color: #0060ac; }
+			ul#menu_eb_1 > li.menuPoint:nth-of-type(3) { background-color: #0060ac; }
 
 
 
-			@media screen and (min-width: 1025px) {
-				#imgText { padding-right: 1.8rem; }
+			@media screen and (min-width: 769px) {
+				.imgText { padding-right: 1.8rem; }
+
+				.coreRight { flex-direction: row-reverse; }
+
+
+
+				.coreRight > div.col23 { 
+					text-align: right; 
+					padding-left: 1.8rem;
+					padding-right: 0px;
+				}
 			}
 
 
-			@media screen and (max-width: 1024px) {
-				#imgText { padding-bottom: 3.6rem; }
+			@media screen and (max-width: 768px) {
+				.imgText { padding-bottom: 3.6rem; }
+
+				.coreRight { flex-direction: column; }
 			}
 		</style>
 	</body>
